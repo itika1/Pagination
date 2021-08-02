@@ -1,0 +1,58 @@
+h1{
+    text-align: center; 
+    color: blueviolet;
+    animation: animate 4s infinite;
+}
+.box{
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    align-items: center;
+    width: 62em;
+    height: 15em;
+}
+.section{
+    position: absolute;
+    top: 500px;
+    right: 230px;
+}
+.section a{
+    color: black;
+    padding: 10px 20px;
+    background-color: darkorchid;
+}
+.section a:hover{
+    width: 5px;
+    height: 5px;
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+}
+.active{
+    width: 5px;
+    height: 5px;
+    border: 1px solid black;
+    color: white;
+    background-color: blue;
+}
+@keyframes change{
+    0%{background-color:blanchedalmond;}
+    30%{background-color: burlywood;}
+    50%{background-color: ghostwhite;}
+    70%{background-color: hotpink;}
+    100%{background-color: mediumseagreen;}
+}
+
+@keyframes animate{
+    from{
+        transform: scale(.8);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+
+body{
+    animation: change 4s infinite;
+}
